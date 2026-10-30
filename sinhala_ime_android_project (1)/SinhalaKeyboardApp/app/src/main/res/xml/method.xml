@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.example.sinhalakeyboard.SettingsActivity"
+    android:isDefault="true">
+
+    <!-- Subtype 1: Sinhala Singlish (Phonetic) -->
+    <subtype
+        android:label="@string/subtype_sinhala_singlish"
+        android:imeSubtypeLocale="si_LK"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="KeyboardLayoutSet=sinhala_singlish,AsciiCapable" />
+
+    <!-- Subtype 2: Sinhala Wijesekara (SLS 1134 Standard) -->
+    <subtype
+        android:label="@string/subtype_sinhala_wijesekara"
+        android:imeSubtypeLocale="si_LK"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="KeyboardLayoutSet=sinhala_wijesekara" />
+
+    <!-- Subtype 3: English QWERTY -->
+    <subtype
+        android:label="@string/subtype_english"
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="KeyboardLayoutSet=qwerty,AsciiCapable" />
+
+</input-method>

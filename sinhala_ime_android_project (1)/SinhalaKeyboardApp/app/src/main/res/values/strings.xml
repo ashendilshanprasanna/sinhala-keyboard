@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sinhala Keyboard</string>
+    <string name="ime_name">Sinhala Keyboard (Singlish &amp; Wijesekara)</string>
+    <string name="settings_name">Sinhala Keyboard Settings</string>
+    <string name="subtype_sinhala_singlish">Sinhala (Singlish)</string>
+    <string name="subtype_sinhala_wijesekara">Sinhala (Wijesekara)</string>
+    <string name="subtype_english">English (US)</string>
+</resources>

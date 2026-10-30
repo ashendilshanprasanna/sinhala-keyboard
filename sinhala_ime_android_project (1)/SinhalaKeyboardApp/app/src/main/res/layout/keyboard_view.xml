@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1E1E24"
+    android:paddingBottom="4dp">
+
+    <!-- Candidate / Prediction Suggestion Bar -->
+    <LinearLayout
+        android:id="@+id/candidate_bar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#2B2B36"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/candidate_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:textColor="#00E5FF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap space to insert"
+            android:textColor="#8E8EA0"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Keyboard Rows Container (Rendered dynamically or via Keyboards) -->
+    <LinearLayout
+        android:id="@+id/rows_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="2dp"
+        android:paddingTop="4dp">
+
+        <!-- Bottom Function Row (Mode Switcher, Space, Enter) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/btn_mode_switch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:text="සිං (Singlish)"
+                android:textSize="12sp"
+                android:backgroundTint="#3A3A4C"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_space"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.8"
+                android:layout_marginHorizontal="4dp"
+                android:text="Space"
+                android:backgroundTint="#3A3A4C"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_enter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="↵"
+                android:textSize="18sp"
+                android:backgroundTint="#00838F"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
